@@ -12,7 +12,7 @@ async def create_user(user: User):
 @app.get("/users/", response_model=list[User])
 async def get_users():
     return [
-        User(name="John Doe", age=20, score=100),
-        User(name="Mary Doe", age=19, score=100),
-        User(name="Anna Thomas", age=19, score=100),
+        User(name="John Doe", age=20, score=100.0),
+        User(name="Mary Doe", age=19, score=100.0),
+        User(name="Anna Thomas", age=19, score=100.0),
     ]

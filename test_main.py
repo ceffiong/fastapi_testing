@@ -21,19 +21,19 @@ def test_get_users():
 
     users = [
         {
-            "name": "John Does",
+            "name": "John Doe",
             "age": 20,
-            "score": 100
+            "score": 100.0
         },
         {
             "name": "Mary Doe",
             "age": 19,
-            "score": 100
+            "score": 100.0
         },
         {
             "name": "Anna Thomas",
             "age": 19,
-            "score": 100
+            "score": 100.0
         }
     ]
     assert response.json() == users
