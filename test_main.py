@@ -31,7 +31,7 @@ def test_get_users():
             "score": 100
         },
         {
-            "name": "Anna Thomas",
+            "name": "Anna Thomass",
             "age": 19,
             "score": 100
         }
