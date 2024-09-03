@@ -21,7 +21,7 @@ def test_get_users():
 
     users = [
         {
-            "name": "John Does",
+            "name": "John Doe",
             "age": 20,
             "score": 100
         },
