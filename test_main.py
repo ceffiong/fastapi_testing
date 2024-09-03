@@ -36,4 +36,5 @@ def test_get_users():
             "score": 100.0
         }
     ]
+    # This is a comment
     assert response.json() == users
