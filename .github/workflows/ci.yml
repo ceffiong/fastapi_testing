@@ -2,22 +2,20 @@ name: Python CI
 
 on:
   push:
-    branches: [ "main" ]  # Run on push to the main branch
-  pull_request:
-    branches: [ "main" ]  # Run on pull requests to the main branch
+    branches: [ "main"]  # Run CI on pushes to main branch
 
 jobs:
   test:
-    runs-on: ubuntu-latest  # Use the latest Ubuntu environment
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3  # Check out the code from the repository
+      uses: actions/checkout@v3
 
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'  # Specify the Python version you want to use
+        python-version: '3.x'
 
     - name: Install dependencies
       run: |
