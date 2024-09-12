@@ -8,7 +8,7 @@ def test_create_user():
     user = {
         "name": "John Doe",
         "age": 20,
-        "score": 100
+        "score": 100.0
     }
     response = client.post("/user/", json=user)
     assert response.status_code == 200
@@ -31,7 +31,7 @@ def test_get_users():
             "score": 100.0
         },
         {
-            "name": "Anna Thomassss",
+            "name": "Anna Thomas",
             "age": 19,
             "score": 100.0
         }
